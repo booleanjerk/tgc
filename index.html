@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Game Creator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Text Game Creator</h1>
+    <p>Build your own text game with multiple decisions and outcomes!</p>
+    <p>This site will generate an HTML file of a website with your game!</p>
+  </header>
+  <main>
+    <form id="gameForm">
+      <div class="question">
+        <label for="gameTitle">Game Title:</label>
+        <input type="text" id="gameTitle" placeholder="Enter your game title..." required>
+      </div>
+      <div class="question">
+        <label for="gameDescription">Game Description:</label>
+        <textarea id="gameDescription" placeholder="Describe your game..." required></textarea>
+      </div>
+      <div id="decisionContainer">
+        <!-- Decisions will be dynamically added here -->
+      </div>
+      <button type="button" id="addDecision">Add Decision</button>
+      <br>
+      <button type="button" id="createGame">CREATE GAME</button>
+    </form>
+    <div id="outputSection" style="display: none;">
+      <h2>Generated Game Code:</h2>
+      <textarea id="outputCode" readonly></textarea>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
