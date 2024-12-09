@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
       history.push(step); // Save the current step to history
       document.getElementById("gameContent").innerHTML = \`<p>\${decision.options[index].outcome}</p>\`;
       step++;
-      setTimeout(renderStep, 2000);
+      setTimeout(renderStep, 5000);
     }
 
     function goBack() {
